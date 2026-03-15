@@ -1,4 +1,9 @@
-# Godot 4+ specific ignores
+# Folder cache hasil import (ini yang bikin berat, wajib di-ignore)
 .godot/
+
+# Folder hasil export (opsional, tapi disarankan)
 /android/
-project.godot/
+/builds/
+
+# File log atau dump
+*.log
