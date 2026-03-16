@@ -2,7 +2,24 @@
 
 [ext_resource type="Texture2D" uid="uid://c3re8kuaf4t2b" path="res://assets/art/sprites/mizi_sprites.png" id="1_3h0ic"]
 [ext_resource type="Script" uid="uid://tvpnk6jgn6w3" path="res://scripts/actors/mizi.gd" id="1_4tnvo"]
+[ext_resource type="Texture2D" uid="uid://bwg57v1sumpad" path="res://assets/art/sprites/mizi_back_walk.png" id="2_tm33x"]
 [ext_resource type="Texture2D" uid="uid://dmnr7ql1s7s6q" path="res://assets/art/sprites/mizi_side_walk.png" id="3_wp026"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1swxq"]
+atlas = ExtResource("2_tm33x")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gf3vd"]
+atlas = ExtResource("2_tm33x")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nkrsj"]
+atlas = ExtResource("2_tm33x")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mna8d"]
+atlas = ExtResource("2_tm33x")
+region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4m0qd"]
 atlas = ExtResource("1_3h0ic")
@@ -44,11 +61,28 @@ region = Rect2(96, 0, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_1swxq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gf3vd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nkrsj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mna8d")
+}],
+"loop": true,
+"name": &"back",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_4m0qd")
 }],
 "loop": true,
 "name": &"idle",
-"speed": 20.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -90,18 +124,18 @@ radius = 69.0
 height = 198.0
 
 [node name="Mizi" type="CharacterBody2D" unique_id=230541768]
+collision_layer = 4
 script = ExtResource("1_4tnvo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=405469248]
 unique_name_in_owner = true
+texture_filter = 1
 position = Vector2(155, 155)
 scale = Vector2(6.3125, 6.3125)
 sprite_frames = SubResource("SpriteFrames_4m0qd")
-animation = &"side"
-frame = 2
-frame_progress = 0.49538147
+animation = &"back"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=565811975]
+texture_filter = 1
 position = Vector2(162, 153)
 shape = SubResource("CapsuleShape2D_3h0ic")
-disabled = true

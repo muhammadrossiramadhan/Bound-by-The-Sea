@@ -17,8 +17,10 @@ func _physics_process(_delta: float) -> void:
 	# 3. Handle Animations (Logic for Up/Down vs Side)
 	if mizi_direction.x != 0:
 		%AnimatedSprite2D.play("side")
-	elif mizi_direction.y != 0:
+	elif mizi_direction.y > 0:
 		%AnimatedSprite2D.play("running")
+	elif mizi_direction.y < 0:
+		%AnimatedSprite2D.play("back")
 	else:
 		%AnimatedSprite2D.play("idle")
 
