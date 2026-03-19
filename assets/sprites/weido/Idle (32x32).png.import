@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byy0gn0ycueka"
-path="res://.godot/imported/mizi.png-f7881843cfda643c2fc5f818a786c6ac.ctex"
+uid="uid://b657tth3uwxfo"
+path="res://.godot/imported/Idle (32x32).png-3a6d56d51d201cbb839eb949889ec944.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character/mizi.png"
-dest_files=["res://.godot/imported/mizi.png-f7881843cfda643c2fc5f818a786c6ac.ctex"]
+source_file="res://assets/sprites/weido/Idle (32x32).png"
+dest_files=["res://.godot/imported/Idle (32x32).png-3a6d56d51d201cbb839eb949889ec944.ctex"]
 
 [params]
 

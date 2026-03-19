@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://wsmtntccruqb"]
 
-[ext_resource type="Texture2D" uid="uid://b657tth3uwxfo" path="res://assets/art/sprites/Idle (32x32).png" id="1_s1yns"]
+[ext_resource type="Texture2D" uid="uid://b657tth3uwxfo" path="res://assets/sprites/weido/Idle (32x32).png" id="1_s1yns"]
 [ext_resource type="Script" uid="uid://dm33nnyaonnxd" path="res://scripts/actors/weirdo.gd" id="1_ujvym"]
-[ext_resource type="Texture2D" uid="uid://cclhh64d4nvms" path="res://assets/art/sprites/Run (32x32).png" id="2_5in0l"]
+[ext_resource type="Texture2D" uid="uid://cclhh64d4nvms" path="res://assets/sprites/weido/Run (32x32).png" id="2_5in0l"]
 [ext_resource type="PackedScene" uid="uid://cruagwmn2gd2g" path="res://scripts/interaction/interaction area/interaction_area.tscn" id="4_7is2k"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xotax"]

@@ -8,7 +8,7 @@
 
 [node name="root" type="Node2D" unique_id=1591103332]
 
-[node name="Mizi" parent="." unique_id=230541768 groups=["player"] instance=ExtResource("1_yhp5d")]
+[node name="Mizi" parent="." unique_id=230541768 instance=ExtResource("1_yhp5d")]
 z_index = 2
 position = Vector2(514, 169)
 motion_mode = 1
@@ -20,7 +20,7 @@ position = Vector2(158, 152)
 script = ExtResource("2_ix82m")
 
 [node name="weirdo" parent="npc" unique_id=1420001335 instance=ExtResource("3_24chi")]
-position = Vector2(-6, -3)
+position = Vector2(-25, 6)
 
 [node name="TileMap" type="TileMap" parent="." unique_id=165698552]
 position = Vector2(436, 75)

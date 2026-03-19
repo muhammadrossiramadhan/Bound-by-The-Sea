@@ -19,6 +19,12 @@ config/features=PackedStringArray("4.6")
 
 InteractionManager="*uid://c8g1mghixlbf6"
 
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/borderless=true
+
 [input]
 
 interactTalk={
