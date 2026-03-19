@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://b2g3xdjwyk3b0"]
 
-[ext_resource type="Texture2D" uid="uid://c3re8kuaf4t2b" path="res://assets/sprites/mizi_sprites.png" id="1_3h0ic"]
+[ext_resource type="Texture2D" uid="uid://c3re8kuaf4t2b" path="res://assets/sprites/mizi/mizi_sprites.png" id="1_3h0ic"]
 [ext_resource type="Script" uid="uid://tvpnk6jgn6w3" path="res://scripts/actors/mizi.gd" id="1_4tnvo"]
-[ext_resource type="Texture2D" uid="uid://j48epyn430kl" path="res://assets/sprites/mizi_back_idle.png" id="2_4m0qd"]
-[ext_resource type="Texture2D" uid="uid://bwg57v1sumpad" path="res://assets/sprites/mizi_back_walk.png" id="2_tm33x"]
-[ext_resource type="Texture2D" uid="uid://dmnr7ql1s7s6q" path="res://assets/sprites/mizi_side_walk.png" id="3_wp026"]
-[ext_resource type="Texture2D" uid="uid://b4e3gp8ad73lb" path="res://assets/sprites/mizi_side_idle.png" id="5_4jd02"]
+[ext_resource type="Texture2D" uid="uid://j48epyn430kl" path="res://assets/sprites/mizi/mizi_back_idle.png" id="2_4m0qd"]
+[ext_resource type="Texture2D" uid="uid://bwg57v1sumpad" path="res://assets/sprites/mizi/mizi_back_walk.png" id="2_tm33x"]
+[ext_resource type="Texture2D" uid="uid://dmnr7ql1s7s6q" path="res://assets/sprites/mizi/mizi_side_walk.png" id="3_wp026"]
+[ext_resource type="Texture2D" uid="uid://b4e3gp8ad73lb" path="res://assets/sprites/mizi/mizi_side_idle.png" id="5_4jd02"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kkgk8"]
 atlas = ExtResource("2_4m0qd")
@@ -156,7 +156,6 @@ script = ExtResource("1_4tnvo")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=405469248]
 unique_name_in_owner = true
 texture_filter = 1
-position = Vector2(155, 155)
 scale = Vector2(6.3125, 6.3125)
 sprite_frames = SubResource("SpriteFrames_4m0qd")
 animation = &"front_walk"
@@ -164,5 +163,4 @@ frame_progress = 0.77090704
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=565811975]
 texture_filter = 1
-position = Vector2(158, 152)
 shape = SubResource("CapsuleShape2D_3h0ic")

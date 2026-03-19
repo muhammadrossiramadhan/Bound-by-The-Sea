@@ -1,10 +1,10 @@
 extends CharacterBody2D
 
-const FPS_MULTIPLIER : float = 0.8
+const FPS_MULTIPLIER: float = 0.8
 
-@export var mizi_speed : float = 500.0
-var mizi_direction : Vector2
-var last_anim : String = "front_idle"
+@export var mizi_speed: float = 500.0
+var mizi_direction: Vector2
+var last_anim: String = "front_idle"
 
 func _physics_process(_delta: float) -> void:
 	%AnimatedSprite2D.speed_scale = FPS_MULTIPLIER

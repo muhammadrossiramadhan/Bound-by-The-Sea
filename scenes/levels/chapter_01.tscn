@@ -10,19 +10,16 @@
 
 [node name="Mizi" parent="." unique_id=230541768 instance=ExtResource("1_yhp5d")]
 z_index = 2
-position = Vector2(514, 169)
 motion_mode = 1
 
 [node name="Camera2D" type="Camera2D" parent="Mizi" unique_id=1992158200]
-position = Vector2(158, 152)
 
 [node name="npc" type="Node2D" parent="." unique_id=1102567968]
 script = ExtResource("2_ix82m")
 
 [node name="weirdo" parent="npc" unique_id=1420001335 instance=ExtResource("3_24chi")]
-position = Vector2(-25, 6)
+position = Vector2(174, 1)
 
 [node name="TileMap" type="TileMap" parent="." unique_id=165698552]
-position = Vector2(436, 75)
 tile_set = SubResource("TileSet_65400")
 format = 2
