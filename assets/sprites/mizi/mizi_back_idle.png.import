@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dugp5yvelw2el"
-path="res://.godot/imported/weirdo.png-9267a545f833941bd01cab22942875a0.ctex"
+uid="uid://j48epyn430kl"
+path="res://.godot/imported/mizi_back_idle.png-18bdf9df36c6aa6118090b5229b00bd6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/characther/weirdo.png"
-dest_files=["res://.godot/imported/weirdo.png-9267a545f833941bd01cab22942875a0.ctex"]
+source_file="res://assets/sprites/mizi/mizi_back_idle.png"
+dest_files=["res://.godot/imported/mizi_back_idle.png-18bdf9df36c6aa6118090b5229b00bd6.ctex"]
 
 [params]
 

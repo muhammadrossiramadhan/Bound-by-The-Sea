@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3re8kuaf4t2b"
-path="res://.godot/imported/mizi_sprites.png-192f9cfdb8bae797a05a1bce1e70420e.ctex"
+uid="uid://b4e3gp8ad73lb"
+path="res://.godot/imported/mizi_side_idle.png-c8fa82bee96ec22156faf6585885ecb9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/mizi_sprites.png"
-dest_files=["res://.godot/imported/mizi_sprites.png-192f9cfdb8bae797a05a1bce1e70420e.ctex"]
+source_file="res://assets/sprites/mizi/mizi_side_idle.png"
+dest_files=["res://.godot/imported/mizi_side_idle.png-c8fa82bee96ec22156faf6585885ecb9.ctex"]
 
 [params]
 

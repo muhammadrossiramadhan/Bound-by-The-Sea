@@ -10,6 +10,8 @@ config_version=5
 
 [application]
 
+config/name="Bound by the Sea"
+config/version="v0.1.0"
 run/main_scene="uid://pr6sf5ml1spv"
 config/features=PackedStringArray("4.6")
 
@@ -38,5 +40,5 @@ interactTalk={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
-renderer/rendering_method="mobile"

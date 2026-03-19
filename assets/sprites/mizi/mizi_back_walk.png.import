@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmnr7ql1s7s6q"
-path="res://.godot/imported/mizi_side_walk.png-e32ee0c00b277b967888c04117d84472.ctex"
+uid="uid://bwg57v1sumpad"
+path="res://.godot/imported/mizi_back_walk.png-c6bb31ead084aa698cc4593e9710cd0a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/mizi_side_walk.png"
-dest_files=["res://.godot/imported/mizi_side_walk.png-e32ee0c00b277b967888c04117d84472.ctex"]
+source_file="res://assets/sprites/mizi/mizi_back_walk.png"
+dest_files=["res://.godot/imported/mizi_back_walk.png-c6bb31ead084aa698cc4593e9710cd0a.ctex"]
 
 [params]
 

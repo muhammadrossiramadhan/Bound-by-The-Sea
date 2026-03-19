@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://pr6sf5ml1spv"]
+
+[ext_resource type="PackedScene" uid="uid://b2g3xdjwyk3b0" path="res://scenes/actors/mizi.tscn" id="1_yhp5d"]
+[ext_resource type="Script" uid="uid://dtjb1nvp2go0c" path="res://scripts/actors/npc.gd" id="2_ix82m"]
+[ext_resource type="PackedScene" uid="uid://wsmtntccruqb" path="res://scenes/actors/weirdo.tscn" id="3_24chi"]
+
+[sub_resource type="TileSet" id="TileSet_65400"]
+
+[node name="root" type="Node2D" unique_id=1591103332]
+
+[node name="Mizi" parent="." unique_id=230541768 groups=["player"] instance=ExtResource("1_yhp5d")]
+z_index = 2
+position = Vector2(514, 169)
+motion_mode = 1
+
+[node name="Camera2D" type="Camera2D" parent="Mizi" unique_id=1992158200]
+position = Vector2(158, 152)
+
+[node name="npc" type="Node2D" parent="." unique_id=1102567968]
+script = ExtResource("2_ix82m")
+
+[node name="weirdo" parent="npc" unique_id=1420001335 instance=ExtResource("3_24chi")]
+position = Vector2(-6, -3)
+
+[node name="TileMap" type="TileMap" parent="." unique_id=165698552]
+position = Vector2(436, 75)
+tile_set = SubResource("TileSet_65400")
+format = 2
