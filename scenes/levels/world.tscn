@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://b2g3xdjwyk3b0" path="res://scenes/actors/mizi.tscn" id="1_7k8c1"]
 [ext_resource type="PackedScene" uid="uid://wsmtntccruqb" path="res://scenes/actors/weirdo.tscn" id="2_lfyvx"]
 [ext_resource type="Script" uid="uid://dtjb1nvp2go0c" path="res://scripts/actors/npc.gd" id="2_w2p53"]
+[ext_resource type="PackedScene" uid="uid://v8bjuvhrcsm5" path="res://scenes/actors/character_dialogue.tscn" id="4_w2p53"]
+[ext_resource type="PackedScene" uid="uid://cglkjug6j0tih" path="res://scenes/ui/dialog_ui.tscn" id="5_7xgas"]
 
 [node name="world" type="Node2D" unique_id=1591103332]
 
@@ -23,3 +25,32 @@ mizi_speed = 150.0
 script = ExtResource("2_w2p53")
 
 [node name="weirdo" parent="npc" unique_id=1420001335 instance=ExtResource("2_lfyvx")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=678437428]
+layer = 20
+
+[node name="CharacterDialogue" parent="CanvasLayer" unique_id=803312663 instance=ExtResource("4_w2p53")]
+anchors_preset = 0
+anchor_top = 0.0
+anchor_bottom = 0.0
+offset_top = 0.0
+offset_bottom = 0.0
+grow_vertical = 1
+
+[node name="DialogUI" parent="CanvasLayer" unique_id=1126195982 instance=ExtResource("5_7xgas")]
+offset_top = -648.0
+offset_right = -3.75
+offset_bottom = -648.0
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=769548785]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0

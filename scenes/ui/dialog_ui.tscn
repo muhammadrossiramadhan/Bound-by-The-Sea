@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://cglkjug6j0tih"]
+
+[ext_resource type="Theme" uid="uid://dcl5ceoi0tspa" path="res://assets/art/themes/color_dialogue.tres" id="1_w1osw"]
+[ext_resource type="Script" uid="uid://b8orh15o1s2gr" path="res://scenes/ui/dialog_ui.gd" id="2_im446"]
+[ext_resource type="FontFile" uid="uid://c4l3ocpdn02f" path="res://assets/fonts/ThaleahFat/ThaleahFat.ttf" id="2_sx8pb"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_w1osw"]
+font = ExtResource("2_sx8pb")
+font_size = 25
+
+[node name="DialogUI" type="Control" unique_id=1126195982]
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("1_w1osw")
+script = ExtResource("2_im446")
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1147244979]
+layout_mode = 0
+offset_left = 4.0
+offset_top = -644.0
+offset_right = 1152.0
+color = Color(0, 0, 0, 0.50980395)
+
+[node name="DialogBox" type="PanelContainer" parent="." unique_id=1391442111]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("1_w1osw")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="DialogBox" unique_id=67906747]
+layout_mode = 2
+text = "Hey Mizi, I'm Weirdo, you can call me anything, i  will report the new issues of our coral city."
+
+[node name="SpeakerBox" type="Control" parent="." unique_id=461703698]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -199.93
+offset_right = 200.0
+offset_bottom = -149.92993
+grow_vertical = 0
+
+[node name="Polygon2D" type="Polygon2D" parent="SpeakerBox" unique_id=1393251514]
+color = Color(0.9647059, 0.43137255, 0.6901961, 1)
+polygon = PackedVector2Array(0, 0, 180, 0, 200, 50, 0, 50)
+
+[node name="Label" type="Label" parent="SpeakerBox" unique_id=322525297]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.0
+offset_top = -11.5
+offset_right = 28.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Weirdo"
+label_settings = SubResource("LabelSettings_w1osw")
+
+[node name="Control" type="Control" parent="." unique_id=1254190095]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1152.0
+offset_top = -648.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Polygon2D" type="Polygon2D" parent="Control" unique_id=80963576]
+position = Vector2(1089.585, 589.405)
+polygon = PackedVector2Array(0, 0, 40, 20, 0, 40)

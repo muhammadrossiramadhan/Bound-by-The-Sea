@@ -7,6 +7,7 @@ const base_text = "PRESS [E] TO "
 
 var active_areas = []
 var can_interact = true
+var is_dialog_active = false
 
 func register_area(area: InteractionArea):
 	active_areas.push_back(area)
@@ -44,7 +45,11 @@ func _sort_by_distance_to_player(area1, area2):
 func _input(event):
 	if event.is_action_pressed("interactTalk") and can_interact:
 		if active_areas.size() > 0:
+			if is_dialog_active:
+				return 
+				
 			can_interact = false
+			label.hide() 
 			
 			# Sesuaikan dengan nama variabel di InteractionArea.gd kamu
 			await active_areas[0].interact.call()
