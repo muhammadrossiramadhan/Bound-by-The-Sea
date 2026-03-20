@@ -1,8 +1,8 @@
-extends Panel
+extends CanvasLayer
 
 var file
-@onready var Char = $VBoxContainer/PanelContainer/Char
-@onready var Text = $VBoxContainer/PanelContainer2/Text
+@onready var Char = $PanelContainer/VBoxContainer/PanelContainer/Char
+@onready var Text = $PanelContainer/VBoxContainer/PanelContainer2/Text
 
 func _ready() -> void:
 	file = FileAccess.open("res://assets/dialogue/dummy.txt", FileAccess.READ)
