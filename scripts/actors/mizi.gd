@@ -29,5 +29,4 @@ func _physics_process(_delta: float) -> void:
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, 40)
 		%AnimatedSprite2D.play(last_anim)
-			
 	move_and_slide()

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://pr6sf5ml1spv"]
 
 [ext_resource type="PackedScene" uid="uid://b2g3xdjwyk3b0" path="res://scenes/actors/mizi.tscn" id="1_yhp5d"]
+[ext_resource type="PackedScene" uid="uid://bmwkeillbtooj" path="res://scenes/ui/dialogue_box.tscn" id="2_24chi"]
 [ext_resource type="Script" uid="uid://dtjb1nvp2go0c" path="res://scripts/actors/npc.gd" id="2_ix82m"]
 [ext_resource type="PackedScene" uid="uid://wsmtntccruqb" path="res://scenes/actors/weirdo.tscn" id="3_24chi"]
 
@@ -13,6 +14,12 @@ z_index = 2
 motion_mode = 1
 
 [node name="Camera2D" type="Camera2D" parent="Mizi" unique_id=1992158200]
+
+[node name="Dialogue_box" parent="Mizi" unique_id=1291847113 instance=ExtResource("2_24chi")]
+offset_left = -619.0
+offset_top = 110.99999
+offset_right = -492.0
+offset_bottom = 161.0
 
 [node name="npc" type="Node2D" parent="." unique_id=1102567968]
 script = ExtResource("2_ix82m")

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bmwkeillbtooj"]
+
+[ext_resource type="Script" uid="uid://sk44dylhcjog" path="res://scripts/dialogue_box.gd" id="1_xg44k"]
+
+[node name="Dialogue_box" type="MarginContainer" unique_id=2027726316]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -720.0
+offset_right = 47.0
+offset_bottom = -670.0
+grow_vertical = 0
+scale = Vector2(4.455, 4.455)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=617038122]
+layout_mode = 2
+script = ExtResource("1_xg44k")
+
+[node name="Char" type="Label" parent="VBoxContainer" unique_id=1835803233]
+layout_mode = 2
+text = "char_name"
+
+[node name="Text" type="Label" parent="VBoxContainer" unique_id=189006134]
+layout_mode = 2
+text = "char_text"
