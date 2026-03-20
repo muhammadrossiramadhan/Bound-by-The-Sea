@@ -21,9 +21,8 @@ InteractionManager="*uid://c8g1mghixlbf6"
 
 [display]
 
-window/size/viewport_width=1280
-window/size/viewport_height=720
-window/size/borderless=true
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 

@@ -5,28 +5,30 @@
 [ext_resource type="Script" uid="uid://dtjb1nvp2go0c" path="res://scripts/actors/npc.gd" id="2_ix82m"]
 [ext_resource type="PackedScene" uid="uid://wsmtntccruqb" path="res://scenes/actors/weirdo.tscn" id="3_24chi"]
 
-[sub_resource type="TileSet" id="TileSet_65400"]
-
 [node name="root" type="Node2D" unique_id=1591103332]
 
 [node name="Mizi" parent="." unique_id=230541768 instance=ExtResource("1_yhp5d")]
-z_index = 2
 motion_mode = 1
 
 [node name="Camera2D" type="Camera2D" parent="Mizi" unique_id=1992158200]
 
-[node name="Dialogue_box" parent="Mizi" unique_id=1291847113 instance=ExtResource("2_24chi")]
-offset_left = -619.0
-offset_top = 110.99999
-offset_right = -492.0
-offset_bottom = 161.0
+[node name="Dialogue_box" parent="Mizi/Camera2D" unique_id=1291847113 instance=ExtResource("2_24chi")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -900.0
+offset_top = 156.0
+offset_right = 900.0
+offset_bottom = 480.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="npc" type="Node2D" parent="." unique_id=1102567968]
+[node name="NPC" type="Node2D" parent="." unique_id=1102567968]
 script = ExtResource("2_ix82m")
 
-[node name="weirdo" parent="npc" unique_id=1420001335 instance=ExtResource("3_24chi")]
+[node name="weirdo" parent="NPC" unique_id=1420001335 instance=ExtResource("3_24chi")]
 position = Vector2(174, 1)
 
-[node name="TileMap" type="TileMap" parent="." unique_id=165698552]
-tile_set = SubResource("TileSet_65400")
-format = 2
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=15389703]

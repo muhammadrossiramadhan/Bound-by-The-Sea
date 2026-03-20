@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c8g1mghixlbf6"]
 
 [ext_resource type="Script" uid="uid://bkkgup4phhfwr" path="res://scripts/interaction/interaction_manager.gd" id="1_s7e8p"]
-[ext_resource type="FontFile" uid="uid://c4l3ocpdn02f" path="res://assets/fonts/ThaleahFat/ThaleahFat.ttf" id="2_7st44"]
+[ext_resource type="FontFile" uid="uid://c4l3ocpdn02f" path="res://assets/fonts/ThaleahFat.ttf" id="2_7st44"]
 
 [node name="InteractionManager" type="Node2D" unique_id=2035716704]
 script = ExtResource("1_s7e8p")
