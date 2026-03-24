@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://d3sg35uep5018"]
+
+[ext_resource type="FontFile" uid="uid://c4l3ocpdn02f" path="res://assets/fonts/ThaleahFat.ttf" id="1_gt3eq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6b6sl"]
+
+[sub_resource type="Theme" id="Theme_l3wks"]
+default_font = ExtResource("1_gt3eq")
+default_font_size = 48
+
+[sub_resource type="Theme" id="Theme_gt3eq"]
+default_font = ExtResource("1_gt3eq")
+default_font_size = 36
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=109342387]
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1545433098]
+anchors_preset = -1
+anchor_top = 0.115
+anchor_right = 0.055166673
+anchor_bottom = 0.30755556
+offset_left = 25.0
+offset_top = -0.20000458
+offset_right = 399.08
+offset_bottom = -0.16000366
+theme_override_styles/panel = SubResource("StyleBoxEmpty_6b6sl")
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=536311407]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/VBoxContainer" unique_id=1957208701]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/VBoxContainer/PanelContainer" unique_id=1946638458]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Title" type="Label" parent="PanelContainer/VBoxContainer/PanelContainer/MarginContainer" unique_id=391448910]
+layout_mode = 2
+theme = SubResource("Theme_l3wks")
+text = "QUEST_TITLE"
+
+[node name="PanelContainer2" type="PanelContainer" parent="PanelContainer/VBoxContainer" unique_id=430175859]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/VBoxContainer/PanelContainer2" unique_id=21770418]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Details" type="Label" parent="PanelContainer/VBoxContainer/PanelContainer2/MarginContainer" unique_id=480573826]
+layout_mode = 2
+size_flags_vertical = 1
+theme = SubResource("Theme_gt3eq")
+text = "QUEST_DETAILS"
