@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 const FPS_MULTIPLIER: float = 0.8
 
-@export var mizi_speed: float = 500.0
+@export var mizi_speed: float = 110.0
 var mizi_direction: Vector2
 var last_anim: String = "front_idle"
 
@@ -27,6 +27,6 @@ func _physics_process(_delta: float) -> void:
 			%AnimatedSprite2D.play("back_walk")
 			last_anim = "back_idle"
 	else:
-		velocity = velocity.move_toward(Vector2.ZERO, 40)
+		velocity = velocity.move_toward(Vector2.ZERO, 20)
 		%AnimatedSprite2D.play(last_anim)
 	move_and_slide()
