@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bmwkeillbtooj" path="res://scenes/ui/dialogue_box.tscn" id="2_24chi"]
 [ext_resource type="Script" uid="uid://dtjb1nvp2go0c" path="res://scripts/actors/npc.gd" id="2_ix82m"]
 [ext_resource type="PackedScene" uid="uid://wsmtntccruqb" path="res://scenes/actors/weirdo.tscn" id="3_24chi"]
+[ext_resource type="PackedScene" uid="uid://d3sg35uep5018" path="res://scenes/ui/quest_box.tscn" id="5_24chi"]
 [ext_resource type="Texture2D" uid="uid://blom2uh44hyh" path="res://assets/tilesets/tileset_luminous-reef.png" id="4_24chi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_65400"]
@@ -35,3 +36,5 @@ tile_map_data = PackedByteArray("AAD9//7/AAABAAAAAAD9////AAABAAAAAAD9/wAAAAABAAA
 tile_set = SubResource("TileSet_w32ec")
 
 [node name="Dialogue_box" parent="." unique_id=1291847113 instance=ExtResource("2_24chi")]
+
+[node name="CanvasLayer" parent="." unique_id=109342387 instance=ExtResource("5_24chi")]
