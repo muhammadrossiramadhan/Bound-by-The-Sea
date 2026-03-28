@@ -1,17 +1,28 @@
 [gd_scene format=3 uid="uid://bmwkeillbtooj"]
 
-[ext_resource type="Script" uid="uid://sk44dylhcjog" path="res://scripts/dialogue_box.gd" id="1_xg44k"]
+[ext_resource type="Script" uid="uid://sk44dylhcjog" path="res://scripts/interaction/dialogue_box.gd" id="1_xg44k"]
 [ext_resource type="FontFile" uid="uid://c4l3ocpdn02f" path="res://assets/fonts/ThaleahFat.ttf" id="2_6iboe"]
+[ext_resource type="Texture2D" uid="uid://blom2uh44hyh" path="res://assets/tilesets/tileset_luminous-reef.png" id="3_4mjmi"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6iboe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4mjmi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4mjmi"]
+bg_color = Color(0.17254902, 0.1882353, 0.20784314, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+anti_aliasing = false
 
 [sub_resource type="Theme" id="Theme_4mjmi"]
 default_font = ExtResource("2_6iboe")
 default_font_size = 48
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_daetb"]
+
 [sub_resource type="Theme" id="Theme_daetb"]
 default_font = ExtResource("2_6iboe")
-default_font_size = 48
+default_font_size = 24
 
 [sub_resource type="Theme" id="Theme_6iboe"]
 default_font = ExtResource("2_6iboe")
@@ -22,65 +33,97 @@ script = ExtResource("1_xg44k")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=6795271]
 anchors_preset = -1
-anchor_top = 0.72200006
+anchor_top = 0.6
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 25.0
-offset_top = 0.2399292
-offset_right = -25.0
-offset_bottom = -25.0
+offset_left = 75.0
+offset_top = 10.0
+offset_right = -75.0
+offset_bottom = -10.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_styles/panel = SubResource("StyleBoxTexture_6iboe")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=617038122]
 layout_mode = 2
+theme_override_constants/separation = 0
 
-[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/VBoxContainer" unique_id=1984659869]
-custom_minimum_size = Vector2(300, 0)
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=1323586356]
+layout_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="PanelContainer/VBoxContainer/HBoxContainer" unique_id=180755725]
+custom_minimum_size = Vector2(11.565, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_4mjmi")
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/VBoxContainer/HBoxContainer" unique_id=1984659869]
 layout_mode = 2
 size_flags_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_4mjmi")
 
-[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/VBoxContainer/PanelContainer" unique_id=1173653604]
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/PanelContainer" unique_id=1173653604]
 layout_mode = 2
+size_flags_horizontal = 0
 theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 10
+theme_override_constants/margin_top = 5
 theme_override_constants/margin_right = 10
-theme_override_constants/margin_bottom = 10
+theme_override_constants/margin_bottom = 5
 
-[node name="Char" type="Label" parent="PanelContainer/VBoxContainer/PanelContainer/MarginContainer" unique_id=1835803233]
-custom_minimum_size = Vector2(50, 0)
+[node name="Char" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/PanelContainer/MarginContainer" unique_id=1835803233]
+texture_filter = 1
 layout_mode = 2
 theme = SubResource("Theme_4mjmi")
+theme_override_font_sizes/font_size = 20
 text = "char_name"
-autowrap_mode = 2
+vertical_alignment = 1
 
-[node name="PanelContainer2" type="PanelContainer" parent="PanelContainer/VBoxContainer" unique_id=134660081]
+[node name="PanelContainer2" type="PanelContainer" parent="PanelContainer/VBoxContainer" unique_id=1674560748]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_daetb")
 
-[node name="MarginContainer2" type="MarginContainer" parent="PanelContainer/VBoxContainer/PanelContainer2" unique_id=2039116082]
+[node name="NinePatchRect" type="NinePatchRect" parent="PanelContainer/VBoxContainer/PanelContainer2" unique_id=455980385]
+layout_mode = 2
+texture = ExtResource("3_4mjmi")
+region_rect = Rect2(0, 64, 32, 32)
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="MarginContainer2" type="MarginContainer" parent="PanelContainer/VBoxContainer/PanelContainer2" unique_id=1900607073]
 layout_mode = 2
 theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 10
+theme_override_constants/margin_top = 5
 theme_override_constants/margin_right = 10
-theme_override_constants/margin_bottom = 10
+theme_override_constants/margin_bottom = 5
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer/PanelContainer2/MarginContainer2" unique_id=567940086]
 layout_mode = 2
 theme_override_constants/separation = 14
 
 [node name="Text" type="Label" parent="PanelContainer/VBoxContainer/PanelContainer2/MarginContainer2/HBoxContainer" unique_id=189006134]
+texture_filter = 1
 custom_minimum_size = Vector2(50, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
 theme = SubResource("Theme_daetb")
-text = "char_text"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = -2
+theme_override_font_sizes/font_size = 20
+text = "char_text
+test
+test"
 autowrap_mode = 2
+max_lines_visible = 3
 
 [node name="Next" type="Label" parent="PanelContainer/VBoxContainer/PanelContainer2/MarginContainer2/HBoxContainer" unique_id=1444138584]
+texture_filter = 1
 layout_mode = 2
 size_flags_vertical = 8
 theme = SubResource("Theme_6iboe")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
 text = "V"
+horizontal_alignment = 2

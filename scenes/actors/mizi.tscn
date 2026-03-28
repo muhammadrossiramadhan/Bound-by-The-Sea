@@ -145,12 +145,12 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3h0ic"]
-radius = 8.0
-height = 28.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4m0qd"]
+size = Vector2(14, 18)
 
 [node name="Mizi" type="CharacterBody2D" unique_id=230541768]
 z_index = 4
+position = Vector2(0, -14)
 collision_layer = 4
 script = ExtResource("1_4tnvo")
 
@@ -163,4 +163,6 @@ frame_progress = 0.77090704
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=565811975]
 texture_filter = 1
-shape = SubResource("CapsuleShape2D_3h0ic")
+position = Vector2(4.3711385e-08, 7)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_4m0qd")

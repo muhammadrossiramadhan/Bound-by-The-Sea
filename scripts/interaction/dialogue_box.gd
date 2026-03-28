@@ -1,7 +1,7 @@
 extends CanvasLayer
 
 var file
-@onready var Char = $PanelContainer/VBoxContainer/PanelContainer/MarginContainer/Char
+@onready var Char = $PanelContainer/VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/Char
 @onready var Text = $PanelContainer/VBoxContainer/PanelContainer2/MarginContainer2/HBoxContainer/Text
 
 func _ready() -> void:
