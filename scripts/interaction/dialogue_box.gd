@@ -2,7 +2,7 @@ extends CanvasLayer
 
 var file
 @onready var Char = $PanelContainer/VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/Char
-@onready var Text = $PanelContainer/VBoxContainer/PanelContainer2/MarginContainer2/HBoxContainer/Text
+@onready var Text = $PanelContainer/VBoxContainer/PanelContainer2/MarginContainer2/VBoxContainer/Text
 
 func _ready() -> void:
 	file = FileAccess.open("res://assets/dialogue/dummy.txt", FileAccess.READ)

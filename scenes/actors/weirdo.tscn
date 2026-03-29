@@ -179,30 +179,35 @@ size = Vector2(12, 20)
 radius = 13.436443
 
 [node name="weirdo" type="CharacterBody2D" unique_id=1420001335]
-position = Vector2(0, -12)
+collision_layer = 8
+collision_mask = 0
 motion_mode = 1
 script = ExtResource("1_ujvym")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=892505223]
 unique_name_in_owner = true
 texture_filter = 1
+position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_2las2")
 animation = &"running"
 frame = 2
 frame_progress = 0.52872235
+flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1412840092]
 z_index = 30
-position = Vector2(-3.5527137e-15, 6)
+position = Vector2(-3.5527137e-15, -6)
 rotation = 1.5707964
 shape = SubResource("RectangleShape2D_7is2k")
 
 [node name="InteractionArea" parent="." unique_id=698128072 instance=ExtResource("4_7is2k")]
 unique_name_in_owner = true
+position = Vector2(0, -12)
 action_name = "talk"
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="InteractionArea" unique_id=1577479000]
-position = Vector2(3.5527137e-15, 5.9999995)
+y_sort_enabled = true
+position = Vector2(-3.1974423e-14, 9.536743e-07)
 rotation = -1.5707964
 scale = Vector2(1.4140646, 1.1806237)
 shape = SubResource("CircleShape2D_ujvym")

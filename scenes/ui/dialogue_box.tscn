@@ -85,11 +85,11 @@ theme_override_styles/panel = SubResource("StyleBoxEmpty_daetb")
 [node name="NinePatchRect" type="NinePatchRect" parent="PanelContainer/VBoxContainer/PanelContainer2" unique_id=455980385]
 layout_mode = 2
 texture = ExtResource("3_4mjmi")
-region_rect = Rect2(0, 64, 32, 32)
-patch_margin_left = 5
-patch_margin_top = 5
-patch_margin_right = 5
-patch_margin_bottom = 5
+region_rect = Rect2(0, 96, 32, 32)
+patch_margin_left = 7
+patch_margin_top = 7
+patch_margin_right = 7
+patch_margin_bottom = 7
 
 [node name="MarginContainer2" type="MarginContainer" parent="PanelContainer/VBoxContainer/PanelContainer2" unique_id=1900607073]
 layout_mode = 2
@@ -98,16 +98,16 @@ theme_override_constants/margin_top = 5
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 5
 
-[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer/PanelContainer2/MarginContainer2" unique_id=567940086]
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/VBoxContainer/PanelContainer2/MarginContainer2" unique_id=872340702]
 layout_mode = 2
-theme_override_constants/separation = 14
+theme_override_constants/separation = 0
 
-[node name="Text" type="Label" parent="PanelContainer/VBoxContainer/PanelContainer2/MarginContainer2/HBoxContainer" unique_id=189006134]
+[node name="Text" type="Label" parent="PanelContainer/VBoxContainer/PanelContainer2/MarginContainer2/VBoxContainer" unique_id=189006134]
 texture_filter = 1
 custom_minimum_size = Vector2(50, 0)
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 1
+size_flags_vertical = 3
 theme = SubResource("Theme_daetb")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_constants/line_spacing = -2
@@ -118,7 +118,7 @@ test"
 autowrap_mode = 2
 max_lines_visible = 3
 
-[node name="Next" type="Label" parent="PanelContainer/VBoxContainer/PanelContainer2/MarginContainer2/HBoxContainer" unique_id=1444138584]
+[node name="Next" type="Label" parent="PanelContainer/VBoxContainer/PanelContainer2/MarginContainer2/VBoxContainer" unique_id=1444138584]
 texture_filter = 1
 layout_mode = 2
 size_flags_vertical = 8

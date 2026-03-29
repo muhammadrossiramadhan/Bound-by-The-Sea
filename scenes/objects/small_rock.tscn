@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dhtri3lvdki4v"]
+
+[ext_resource type="Texture2D" uid="uid://blom2uh44hyh" path="res://assets/tilesets/tileset_luminous-reef.png" id="1_0rbhn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h0bet"]
+atlas = ExtResource("1_0rbhn")
+region = Rect2(2, 165, 28, 26)
+
+[node name="small_rock" type="StaticBody2D" unique_id=343017124]
+collision_layer = 2
+collision_mask = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1404622904]
+position = Vector2(0, -13)
+texture = SubResource("AtlasTexture_h0bet")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1912056935]
+position = Vector2(0, -10)
+polygon = PackedVector2Array(-4, -5, 11, -5, 12, -3, 13, 6, 13, 9, 10, 10, -2, 10, -7, 10, -11, 8, -11, 4, -9, 1, -7, -3)
