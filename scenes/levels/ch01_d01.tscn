@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://qjuq81f7s3rw"]
 
+[ext_resource type="Script" uid="uid://d0rd8drgpavxn" path="res://scripts/dialogues/ch01_d01.gd" id="1_0sc3j"]
 [ext_resource type="Texture2D" uid="uid://cr528qo2ugo3x" path="res://assets/vn/mizi_shocked.png" id="1_i75na"]
+[ext_resource type="PackedScene" uid="uid://bmwkeillbtooj" path="res://scenes/ui/dialogue_box.tscn" id="3_vqiwk"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i75na"]
 
@@ -16,6 +18,7 @@ animations = [{
 }]
 
 [node name="ch01_d01" type="CanvasLayer" unique_id=621738589]
+script = ExtResource("1_0sc3j")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=1437507128]
 clip_contents = true
@@ -34,5 +37,16 @@ size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxEmpty_i75na")
 
 [node name="Mizi" type="AnimatedSprite2D" parent="PanelContainer" unique_id=1441939028]
+clip_children = 2
 position = Vector2(481, 262)
 sprite_frames = SubResource("SpriteFrames_wxpda")
+
+[node name="ColorRect" type="ColorRect" parent="PanelContainer/Mizi" unique_id=341129771]
+offset_left = -481.0
+offset_top = -262.0
+offset_right = 119.0
+offset_bottom = 62.0
+color = Color(0, 0, 0, 0)
+
+[node name="Dialogue_box" parent="." unique_id=1375375667 instance=ExtResource("3_vqiwk")]
+layer = 2

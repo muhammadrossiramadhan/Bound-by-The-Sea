@@ -1,8 +1,11 @@
 extends CanvasLayer
 
 var file
-@onready var Char = $PanelContainer/VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/Char
-@onready var Text = $PanelContainer/VBoxContainer/PanelContainer2/MarginContainer2/VBoxContainer/Text
+var active_color = Color(0, 0, 0, 0)
+signal active_char(name: String, color: Color)
+signal end_conversation()
+@onready var Char = %Char
+@onready var Text = %Text
 
 func _ready() -> void:
 	file = FileAccess.open("res://assets/dialogue/dummy.txt", FileAccess.READ)
@@ -13,15 +16,19 @@ func _ready() -> void:
 
 func char_check() -> String:
 	var line = file.get_line()
-	if line == "/m":
-		Char.set_text("Mizi")
-		return file.get_line()
-	elif line == "/i":
-		Char.set_text("Ivan")
-		return file.get_line()
-	elif line == "/n":
-		Char.set_text("(Narrator)")
-		return file.get_line()
+	match line:
+		"/m":
+			active_char.emit("Mizi", active_color)
+			Char.set_text("Mizi")
+			return file.get_line()
+		"/i":
+			active_char.emit("Ivan", active_color)
+			Char.set_text("Ivan")
+			return file.get_line()
+		"/n":
+			active_char.emit("Narrator", active_color)
+			Char.set_text("(Narrator)")
+			return file.get_line()
 	return line
 	
 func display() -> void:
@@ -29,5 +36,5 @@ func display() -> void:
 		var line = char_check()
 		Text.set_text(line)
 		await get_tree().create_timer(2.0).timeout
-	visible = 0
+	end_conversation.emit()
 	file.close()

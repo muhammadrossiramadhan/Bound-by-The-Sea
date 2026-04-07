@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://sk44dylhcjog" path="res://scripts/interaction/dialogue_box.gd" id="1_xg44k"]
 [ext_resource type="FontFile" uid="uid://c4l3ocpdn02f" path="res://assets/fonts/ThaleahFat.ttf" id="2_6iboe"]
-[ext_resource type="Texture2D" uid="uid://blom2uh44hyh" path="res://assets/tilesets/tileset_luminous-reef.png" id="3_4mjmi"]
+[ext_resource type="Texture2D" uid="uid://ds8m2qgxt4dtj" path="res://assets/tilesets/tileset_ui.png" id="3_4mjmi"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6iboe"]
 
@@ -19,6 +19,10 @@ default_font = ExtResource("2_6iboe")
 default_font_size = 48
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_daetb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_daetb"]
+atlas = ExtResource("3_4mjmi")
+region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="Theme" id="Theme_daetb"]
 default_font = ExtResource("2_6iboe")
@@ -70,6 +74,7 @@ theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 5
 
 [node name="Char" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/PanelContainer/MarginContainer" unique_id=1835803233]
+unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
 theme = SubResource("Theme_4mjmi")
@@ -84,8 +89,7 @@ theme_override_styles/panel = SubResource("StyleBoxEmpty_daetb")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="PanelContainer/VBoxContainer/PanelContainer2" unique_id=455980385]
 layout_mode = 2
-texture = ExtResource("3_4mjmi")
-region_rect = Rect2(0, 96, 32, 32)
+texture = SubResource("AtlasTexture_daetb")
 patch_margin_left = 7
 patch_margin_top = 7
 patch_margin_right = 7
@@ -103,6 +107,7 @@ layout_mode = 2
 theme_override_constants/separation = 0
 
 [node name="Text" type="Label" parent="PanelContainer/VBoxContainer/PanelContainer2/MarginContainer2/VBoxContainer" unique_id=189006134]
+unique_name_in_owner = true
 texture_filter = 1
 custom_minimum_size = Vector2(50, 0)
 layout_mode = 2
@@ -119,6 +124,7 @@ autowrap_mode = 2
 max_lines_visible = 3
 
 [node name="Next" type="Label" parent="PanelContainer/VBoxContainer/PanelContainer2/MarginContainer2/VBoxContainer" unique_id=1444138584]
+unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
 size_flags_vertical = 8
