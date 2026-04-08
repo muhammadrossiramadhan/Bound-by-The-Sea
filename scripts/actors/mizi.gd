@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 const FPS_MULTIPLIER: float = 0.8
 
-@export var mizi_speed: float = 500.0
+@export var mizi_speed: float = 110.0
 var mizi_direction: Vector2
 var last_anim: String = "front_idle"
 
