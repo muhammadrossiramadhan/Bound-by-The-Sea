@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bjdpibu0koo04"
+path="res://.godot/imported/Bound by The Sea ( Gameplay ).wav-8e9c9d9fccb29d8d85ee54ac18f33642.sample"
+
+[deps]
+
+source_file="res://assets/audio/bgm/Bound by The Sea ( Gameplay ).wav"
+dest_files=["res://.godot/imported/Bound by The Sea ( Gameplay ).wav-8e9c9d9fccb29d8d85ee54ac18f33642.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
