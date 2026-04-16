@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://d0rd8drgpavxn" path="res://scripts/dialogues/ch01_d01.gd" id="1_0sc3j"]
 [ext_resource type="Texture2D" uid="uid://cr528qo2ugo3x" path="res://assets/vn/mizi_shocked.png" id="1_i75na"]
+[ext_resource type="Texture2D" uid="uid://gs3wlx3hdimh" path="res://assets/vn/mizi_sad.png" id="2_vqiwk"]
 [ext_resource type="PackedScene" uid="uid://bmwkeillbtooj" path="res://scenes/ui/dialogue_box.tscn" id="3_vqiwk"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i75na"]
@@ -9,6 +10,9 @@
 [sub_resource type="SpriteFrames" id="SpriteFrames_wxpda"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vqiwk")
+}, {
 "duration": 1.0,
 "texture": ExtResource("1_i75na")
 }],
@@ -18,6 +22,7 @@ animations = [{
 }]
 
 [node name="ch01_d01" type="CanvasLayer" unique_id=621738589]
+visible = false
 script = ExtResource("1_0sc3j")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=1437507128]
@@ -50,3 +55,4 @@ color = Color(0, 0, 0, 0)
 
 [node name="Dialogue_box" parent="." unique_id=1375375667 instance=ExtResource("3_vqiwk")]
 layer = 2
+visible = false

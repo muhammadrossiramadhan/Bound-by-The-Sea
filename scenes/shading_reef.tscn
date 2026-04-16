@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dmj5qgsdr4j31"]
+
+[node name="shading_reef" type="CanvasLayer" unique_id=309250893]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1501433023]
+offset_top = 1.0
+offset_right = 40.0
+offset_bottom = 41.0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1344019833]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0, 0.10980392, 0.23137255, 0.2784314)
