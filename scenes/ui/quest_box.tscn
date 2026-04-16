@@ -43,7 +43,7 @@ custom_minimum_size = Vector2(10, 0)
 layout_mode = 2
 theme = SubResource("Theme_l3wks")
 theme_override_font_sizes/font_size = 16
-text = "QUEST_TITLE"
+text = "temukan ivan"
 autowrap_mode = 3
 
 [node name="PanelContainer2" type="PanelContainer" parent="PanelContainer/VBoxContainer" unique_id=430175859]
@@ -63,6 +63,5 @@ layout_mode = 2
 size_flags_vertical = 1
 theme = SubResource("Theme_gt3eq")
 theme_override_font_sizes/font_size = 12
-text = "QUEST_DETAILS
-blablablabalbalalblbalblabla"
+text = "jelajahi luminous reef untuk temukan ivan"
 autowrap_mode = 3
